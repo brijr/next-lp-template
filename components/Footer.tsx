@@ -11,10 +11,10 @@ const Footer = ({ company, children }: FooterProps) => {
     >
       <div
         id="container"
-        className="flex justify-between w-full max-w-screen-lg"
+        className="flex flex-col md:flex-row justify-between w-full max-w-screen-lg"
       >
-        <h4 className="text-xl">{children}</h4>
-        <div className="text-right text-slate-600">
+        <h4 className="text-xl mb-6 ">{children}</h4>
+        <div className="md:text-right text-slate-600">
           <p>© {company}, 2023 | All Rights Reserved</p>
           <p>
             <a className="underline" href="/">

@@ -66,27 +66,20 @@ export default function Home() {
         attorney-client privilege. An automated matching system will match each
         request with a member attorney/advocate representing the specific
         geography. A list of participating attorneys is available
-        <a href="javascript:void(0);" onClick="togglePartnersList(true)">
-          here
-        </a>
-        . To see a list of advertisers in New York,
-        <a href="javascript:void(0);" onClick="togglePartnersList(true)">
-          click here
-        </a>
-        . To see a list of advertisers in South Carolina,
-        <a href="javascript:void(0);" onClick="togglePartnersList(true)">
-          click here
-        </a>
-        . This website, it’s owners, affiliates, and partners do not claim to be
-        affiliated with any Local, State, or Federal Government agencies, and
-        our advertising materials, or methods are not affiliated or approved by
-        the U.S. Government. This website assists people in obtaining services
-        applicable to the content of this website by pre-qualifying our clients.
-        We then match our clients with the applicable service provider or
-        company within our company’s network of attorneys, and advocates.
+        <a href="/">here</a>. To see a list of advertisers in New York,
+        <a href="/">click here</a>. To see a list of advertisers in South
+        Carolina,
+        <a href="/">click here</a>. This website, it’s owners, affiliates, and
+        partners do not claim to be affiliated with any Local, State, or Federal
+        Government agencies, and our advertising materials, or methods are not
+        affiliated or approved by the U.S. Government. This website assists
+        people in obtaining services applicable to the content of this website
+        by pre-qualifying our clients. We then match our clients with the
+        applicable service provider or company within our company’s network of
+        attorneys, and advocates.
       </Disclaimer>
 
-      <Footer company="Benefits.com" >
+      <Footer company="Benefits.com">
         Your <strong>Free Evaluation</strong> is only minutes away!
       </Footer>
     </main>
