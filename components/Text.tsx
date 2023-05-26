@@ -7,7 +7,7 @@ type Props = {
   buttonColor?: string;
 };
 
-const Text = ({ children, heading, buttonText }: Props) => {
+const Text = ({ children, heading, buttonText, buttonColor }: Props) => {
   return (
     <section
       id="hero"
@@ -23,7 +23,7 @@ const Text = ({ children, heading, buttonText }: Props) => {
         <p className="max-w-[720px]">
           {children || "This is dummy text. To replace, pass in children."}
         </p>
-        <Button href="/about">{buttonText || "Get Started"}</Button>
+        <Button style={{ backgroundColor="" }} href="/about">{buttonText || "Get Started"}</Button>
       </div>
     </section>
   );
