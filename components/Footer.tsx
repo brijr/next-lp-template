@@ -1,9 +1,9 @@
 type FooterProps = {
   company: string;
-  cta?: string;
+  children?: React.ReactNode;
 };
 
-const Footer = ({ company, cta }: FooterProps) => {
+const Footer = ({ company, children }: FooterProps) => {
   return (
     <footer
       id="Footer"
@@ -13,7 +13,7 @@ const Footer = ({ company, cta }: FooterProps) => {
         id="container"
         className="flex justify-between w-full max-w-screen-lg"
       >
-        <h4 className="text-xl">{cta}</h4>
+        <h4 className="text-xl">{children}</h4>
         <div className="text-right text-slate-600">
           <p>© {company}, 2023 | All Rights Reserved</p>
           <p>

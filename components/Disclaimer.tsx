@@ -8,7 +8,7 @@ const Disclaimer = ({ children }: { children: ReactNode }) => {
     >
       <div
         id="container"
-        className="max-w-screen-lg flex flex-col items-center gap-6"
+        className="max-w-screen-lg flex flex-col items-center gap-6 text-gray-500"
       >
         <p className="text-xs">{children}</p>
       </div>

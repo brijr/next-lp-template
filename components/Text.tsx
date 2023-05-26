@@ -23,7 +23,9 @@ const Text = ({ children, heading, buttonText, buttonColor }: Props) => {
         <p className="max-w-[720px]">
           {children || "This is dummy text. To replace, pass in children."}
         </p>
-        <Button style={{ backgroundColor="" }} href="/about">{buttonText || "Get Started"}</Button>
+        <Button style={{ backgroundColor: `${buttonColor}` }} href="/about">
+          {buttonText || "Get Started"}
+        </Button>
       </div>
     </section>
   );
