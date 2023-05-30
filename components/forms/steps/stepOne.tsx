@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-interface Step1Props {
+interface StepOneProps {
   formData: {
     worked_5_of_10: "Yes" | "No" | "";
     attorney: "Yes" | "No" | "";
@@ -21,7 +21,7 @@ interface Step1Props {
   >;
 }
 
-const Step1: React.FC<Step1Props> = ({ formData, setFormData }) => {
+const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
   const {
     worked_5_of_10,
     attorney,
@@ -32,7 +32,7 @@ const Step1: React.FC<Step1Props> = ({ formData, setFormData }) => {
   } = formData;
 
   const handleOptionChange = (
-    field: keyof Step1Props["formData"],
+    field: keyof StepOneProps["formData"],
     value: "Yes" | "No"
   ) => {
     setFormData((prevFormData) => ({
@@ -44,8 +44,8 @@ const Step1: React.FC<Step1Props> = ({ formData, setFormData }) => {
   return (
     <div className="flex flex-col items-center mt-8">
       <h2 className="text-2xl font-bold mb-4">Step 1 of 2</h2>
-      <div className="page active">
-        <div className="row form-group flex justify-between gap-6 my-8">
+      <div className="page active bg-white p-12 rounded-lg">
+        <div className="row form-group flex justify-between gap-6 mb-10">
           <label
             htmlFor="worked_5_of_10"
             className="col-xs-12 col-md-8 text-xl"
@@ -82,7 +82,7 @@ const Step1: React.FC<Step1Props> = ({ formData, setFormData }) => {
             </div>
           </div>
         </div>
-        <div className="row form-group flex justify-between gap-6 my-8">
+        <div className="row form-group flex justify-between gap-6 my-10">
           <label htmlFor="attorney" className="col-xs-12 col-md-8 text-xl">
             Is an attorney helping you with your case?
           </label>
@@ -116,7 +116,7 @@ const Step1: React.FC<Step1Props> = ({ formData, setFormData }) => {
             </div>
           </div>
         </div>
-        <div className="row form-group flex justify-between gap-6 my-8">
+        <div className="row form-group flex justify-between gap-6 my-10">
           <label
             htmlFor="earning_less_than_1000"
             className="col-xs-12 col-md-8 text-xl"
@@ -157,7 +157,7 @@ const Step1: React.FC<Step1Props> = ({ formData, setFormData }) => {
             </div>
           </div>
         </div>
-        <div className="row form-group flex justify-between gap-6 my-8">
+        <div className="row form-group flex justify-between gap-6 my-10">
           <label
             htmlFor="current_dr_or_script"
             className="col-xs-12 col-md-8 text-xl"
@@ -197,7 +197,7 @@ const Step1: React.FC<Step1Props> = ({ formData, setFormData }) => {
             </div>
           </div>
         </div>
-        <div className="row form-group flex justify-between gap-6 my-8">
+        <div className="row form-group flex justify-between gap-6 my-10">
           <label
             htmlFor="receiving_benefits"
             className="col-xs-12 col-md-8 text-xl"
@@ -234,7 +234,7 @@ const Step1: React.FC<Step1Props> = ({ formData, setFormData }) => {
             </div>
           </div>
         </div>
-        <div className="row form-group flex justify-between gap-6 my-8">
+        <div className="row form-group flex justify-between gap-6 my-10">
           <label htmlFor="is_veteran" className="col-xs-12 col-md-8 text-xl">
             Are you a Veteran?
           </label>
@@ -276,4 +276,4 @@ const Step1: React.FC<Step1Props> = ({ formData, setFormData }) => {
   );
 };
 
-export default Step1;
+export default StepOne;

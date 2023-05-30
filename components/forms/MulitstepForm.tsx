@@ -29,7 +29,6 @@ const Step1: React.FC<Step1Props> = ({ formData, setFormData }) => {
 };
 
 const Step2 = () => <div className="text-center">Step 2</div>;
-const Step3 = () => <div className="text-center">Step 3</div>;
 
 const MultiStepForm = () => {
   const [step, setStep] = useState(1);
@@ -54,7 +53,6 @@ const MultiStepForm = () => {
     <div className="w-full">
       {step === 1 && <Step1 formData={formData} setFormData={setFormData} />}
       {step === 2 && <Step2 />}
-      {step === 3 && <Step3 />}
 
       <div className="flex justify-center mt-4">
         <button
