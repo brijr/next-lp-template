@@ -7,6 +7,7 @@ import Logos from "@/components/Logos";
 import Text from "@/components/Text";
 import Disclaimer from "@/components/Disclaimer";
 import Footer from "@/components/Footer";
+import MultiStepForm from "@/components/forms/MulitstepForm";
 
 // To change the font family go to Layout.tsx and change the font-family of the body (Default is Inter)
 
@@ -34,7 +35,9 @@ export default function Home() {
         <strong id="todayDate">May 26th, 2023</strong>.*
       </Hero>
 
-      <Section>{/* Form will go here */}</Section>
+      <Section>
+        <MultiStepForm />
+      </Section>
 
       <Quote
         quote="Thank you so much for helping me! I've given your name to a few people who are also trying to get disability. You guys were wonderful."
