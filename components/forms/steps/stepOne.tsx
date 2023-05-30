@@ -60,7 +60,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-l-lg ${
                   worked_5_of_10 === "Yes"
-                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500 z-50"
+                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500"
                     : "bg-white text-blue-500"
                 }`}
                 onClick={() => handleOptionChange("worked_5_of_10", "Yes")}
@@ -70,7 +70,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-r-lg ${
                   worked_5_of_10 === "No"
-                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500 z-50"
+                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500"
                     : "bg-white text-blue-500"
                 }`}
                 onClick={() => handleOptionChange("worked_5_of_10", "No")}
@@ -94,7 +94,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-l-lg ${
                   attorney === "Yes"
-                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500 z-50"
+                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500"
                     : "bg-white text-blue-500"
                 }`}
                 onClick={() => handleOptionChange("attorney", "Yes")}
@@ -104,7 +104,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-r-lg ${
                   attorney === "No"
-                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500 z-50"
+                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500"
                     : "bg-white text-blue-500"
                 }`}
                 onClick={() => handleOptionChange("attorney", "No")}
@@ -131,7 +131,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-l-lg ${
                   earning_less_than_1000 === "Yes"
-                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500 z-50"
+                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500"
                     : "bg-white text-blue-500"
                 }`}
                 onClick={() =>
@@ -143,7 +143,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-r-lg ${
                   earning_less_than_1000 === "No"
-                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500 z-50"
+                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500"
                     : "bg-white text-blue-500"
                 }`}
                 onClick={() =>
@@ -173,7 +173,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-l-lg ${
                   current_dr_or_script === "Yes"
-                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500 z-50"
+                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500"
                     : "bg-white text-blue-500"
                 }`}
                 onClick={() =>
@@ -185,7 +185,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-r-lg ${
                   current_dr_or_script === "No"
-                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500 z-50"
+                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500"
                     : "bg-white text-blue-500"
                 }`}
                 onClick={() => handleOptionChange("current_dr_or_script", "No")}
@@ -212,7 +212,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-l-lg ${
                   receiving_benefits === "Yes"
-                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500 z-50"
+                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500"
                     : "bg-white text-blue-500"
                 }`}
                 onClick={() => handleOptionChange("receiving_benefits", "Yes")}
@@ -222,7 +222,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-r-lg ${
                   receiving_benefits === "No"
-                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500 z-50"
+                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500"
                     : "bg-white text-blue-500"
                 }`}
                 onClick={() => handleOptionChange("receiving_benefits", "No")}
@@ -246,7 +246,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-l-lg ${
                   is_veteran === "Yes"
-                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500 z-50"
+                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500"
                     : "bg-white text-blue-500"
                 }`}
                 onClick={() => handleOptionChange("is_veteran", "Yes")}
@@ -256,7 +256,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-r-lg ${
                   is_veteran === "No"
-                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500 z-50"
+                    ? "bg-green-500 z-50 outline-4 outline-green-400 text-white hover:bg-green-500"
                     : "bg-white text-blue-500"
                 }`}
                 onClick={() => handleOptionChange("is_veteran", "No")}

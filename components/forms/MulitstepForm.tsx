@@ -1,9 +1,14 @@
-The code has been refactored to use a custom hook to handle form data and submission.
+"use client";
+
+// This component is a multi-step form that is used to collect user data in two steps.
+// It uses the StepOne and StepTwo components to render the form fields for each step.
+// The useMultiStepForm hook is used to manage the form data and handle form submission.
 
 import React, { useState } from "react";
 import StepOne from "@/components/forms/steps/stepOne";
 import StepTwo from "@/components/forms/steps/stepTwo";
 
+// Define the types for the form data for each step
 interface StepOneProps {
   formData: {
     worked_5_of_10: "" | "Yes" | "No";
@@ -48,6 +53,7 @@ interface StepTwoProps {
   onSubmit: () => void;
 }
 
+// Define the useMultiStepForm hook to manage the form data and handle form submission
 const useMultiStepForm = () => {
   const [step, setStep] = useState(1);
   const [formDataStep1, setFormDataStep1] = useState<StepOneProps["formData"]>({
@@ -67,12 +73,23 @@ const useMultiStepForm = () => {
     zip_code: "",
   });
 
+  // Define the handleFormSubmit function to log the form data to the console
   const handleFormSubmit = () => {
     console.log("Step 1 data:", formDataStep1);
     console.log("Step 2 data:", formDataStep2);
   };
 
-  const setValue = (field: string, value: any) => {
+  // Define the setValue function to update the form data based on the current step
+  const setValue: React.Dispatch<
+    React.SetStateAction<{
+      age: string;
+      first_name: string;
+      last_name: string;
+      email_address: string;
+      phone_home: string;
+      zip_code: string;
+    }>
+  > = (field: keyof typeof formDataStep2, value: string) => {
     if (step === 1) {
       setFormDataStep1((prevFormData) => ({
         ...prevFormData,
@@ -86,6 +103,7 @@ const useMultiStepForm = () => {
     }
   };
 
+  // Define the handleNextStep function to validate the form data and move to the next step
   const handleNextStep = () => {
     if (
       formDataStep1.worked_5_of_10 === "" ||
@@ -101,8 +119,10 @@ const useMultiStepForm = () => {
     }
   };
 
+  // Define the handlePreviousStep function to move back to the previous step
   const handlePreviousStep = () => setStep(step - 1);
 
+  // Return the necessary values and functions for the MultiStepForm component
   return {
     step,
     formDataStep1,
@@ -114,6 +134,7 @@ const useMultiStepForm = () => {
   };
 };
 
+// Define the MultiStepForm component to render the form and handle form submission
 const MultiStepForm = () => {
   const {
     step,
@@ -125,6 +146,7 @@ const MultiStepForm = () => {
     handlePreviousStep,
   } = useMultiStepForm();
 
+  // Render the form fields for each step based on the current step value
   return (
     <div className="w-full">
       {step === 1 && (
@@ -139,6 +161,7 @@ const MultiStepForm = () => {
         />
       )}
 
+      {/* Render the buttons for each step based on the current step value */}
       <div className="flex justify-center mt-4">
         {step === 1 && (
           <button
@@ -170,5 +193,3 @@ const MultiStepForm = () => {
 };
 
 export default MultiStepForm;
-
-
