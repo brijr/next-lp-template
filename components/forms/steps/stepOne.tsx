@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 interface StepOneProps {
   formData: {
     worked_5_of_10: "Yes" | "No" | "";
@@ -44,8 +42,8 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
   return (
     <div className="flex flex-col items-center mt-8">
       <h2 className="text-2xl font-bold mb-4">Step 1 of 2</h2>
-      <div className="page active bg-white p-12 rounded-lg">
-        <div className="row form-group flex justify-between gap-6 mb-10">
+      <div className="page active bg-white md:p-12 p-4 rounded-lg">
+        <div className="row form-group md:flex items-center justify-between gap-6 mb-10">
           <label
             htmlFor="worked_5_of_10"
             className="col-xs-12 col-md-8 text-xl"
@@ -57,7 +55,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               role="group"
               id="worked_5_of_10"
               aria-label="Have you worked full-time for 5 out of the last 10 years?"
-              className="btn-group btn-group-toggle"
+              className="btn-group btn-group-toggle mt-8 md:mt-0"
             >
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-l-lg ${
@@ -82,7 +80,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
             </div>
           </div>
         </div>
-        <div className="row form-group flex justify-between gap-6 my-10">
+        <div className="row form-group md:flex items-center justify-between gap-6 my-10">
           <label htmlFor="attorney" className="col-xs-12 col-md-8 text-xl">
             Is an attorney helping you with your case?
           </label>
@@ -91,7 +89,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               role="group"
               id="attorney"
               aria-label="Is an attorney helping you with your case?"
-              className="btn-group btn-group-toggle"
+              className="btn-group btn-group-toggle mt-8 md"
             >
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-l-lg ${
@@ -116,7 +114,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
             </div>
           </div>
         </div>
-        <div className="row form-group flex justify-between gap-6 my-10">
+        <div className="row form-group md:flex items-center justify-between gap-6 my-10">
           <label
             htmlFor="earning_less_than_1000"
             className="col-xs-12 col-md-8 text-xl"
@@ -128,7 +126,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               role="group"
               id="earning_less_than_1000"
               aria-label="Do you currently earn less than $1,000 a month?"
-              className="btn-group btn-group-toggle"
+              className="btn-group btn-group-toggle mt-8 md"
             >
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-l-lg ${
@@ -157,7 +155,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
             </div>
           </div>
         </div>
-        <div className="row form-group flex justify-between gap-6 my-10">
+        <div className="row form-group md:flex items-center justify-between gap-6 my-10">
           <label
             htmlFor="current_dr_or_script"
             className="col-xs-12 col-md-8 text-xl"
@@ -170,7 +168,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               role="group"
               id="current_dr_or_script"
               aria-label="Are you currently seeing a doctor or taking any prescription medication?"
-              className="btn-group btn-group-toggle"
+              className="btn-group btn-group-toggle mt-8 md"
             >
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-l-lg ${
@@ -197,7 +195,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
             </div>
           </div>
         </div>
-        <div className="row form-group flex justify-between gap-6 my-10">
+        <div className="row form-group md:flex items-center justify-between gap-6 my-10">
           <label
             htmlFor="receiving_benefits"
             className="col-xs-12 col-md-8 text-xl"
@@ -209,7 +207,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               role="group"
               id="receiving_benefits"
               aria-label="Are you already receiving any Social Security Disability benefits?"
-              className="btn-group btn-group-toggle"
+              className="btn-group btn-group-toggle mt-8 md"
             >
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-l-lg ${
@@ -234,7 +232,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
             </div>
           </div>
         </div>
-        <div className="row form-group flex justify-between gap-6 my-10">
+        <div className="row form-group md:flex items-center justify-between gap-6 my-10">
           <label htmlFor="is_veteran" className="col-xs-12 col-md-8 text-xl">
             Are you a Veteran?
           </label>
@@ -243,7 +241,7 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               role="group"
               id="is_veteran"
               aria-label="Are you or a loved one a Veteran?"
-              className="btn-group btn-group-toggle"
+              className="btn-group btn-group-toggle mt-8 md"
             >
               <label
                 className={`btn btn-outline-primary py-4 px-6 outline-1 outline-blue-500 outline hover:bg-blue-300 transition-all rounded-l-lg ${
@@ -267,9 +265,6 @@ const StepOne: React.FC<StepOneProps> = ({ formData, setFormData }) => {
               </label>
             </div>
           </div>
-        </div>
-        <div className="alert alert-danger display_none">
-          The fields highlighted in red are required.
         </div>
       </div>
     </div>
