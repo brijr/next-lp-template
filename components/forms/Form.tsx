@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Section from '@/components/Section';
 
 export default function Form() {
@@ -294,7 +294,7 @@ export default function Form() {
 		phone_home: ''
 	});
 
-	const handleChangeTwo = (e) => {
+	const handleChangeTwo = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
 		setFormDataTwo({ ...formDataTwo, [e.target.name]: e.target.value });
 	};
 
@@ -453,7 +453,7 @@ export default function Form() {
 					) : (
 						<button
 							className="px-6 py-6 bg-orange-500 hover:bg-orange-300 transition-all w-full mt-6 text-2xl font-semibold text-white rounded-lg"
-							onClick={handleFormSubmit}
+							// onClick={handleFormSubmit}
 							type="button"
 						>
 							Submit
